@@ -1,7 +1,5 @@
 package com.gen.games.loja.model;
 
-import java.time.LocalDate;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.Entity;
@@ -27,7 +25,7 @@ public class Produto {
 	@NotBlank(message = "O nome é obrigatório")
 	private String nome;
 
-	private LocalDate ano_lancamento;
+	private String ano_lancamento;
 
 	private boolean multiplayer;
 
